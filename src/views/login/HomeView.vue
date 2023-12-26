@@ -26,8 +26,9 @@
             </div>
           </div>
         </div>        -->
-        <swiper-component>
-        </swiper-component>
+        <!-- <swiper-component>
+        </swiper-component> -->
+        <SliderDe></SliderDe>
       </div>
       <div class="col-span-9 flex items-center">
         <div class="flex flex-col justify-between h-5/6 items-center mx-auto">
@@ -76,13 +77,15 @@
 </template>
 
 <script>
-import SwiperComponent from './components/SwiperComponent.vue';
+// import SwiperComponent from './components/SwiperComponent.vue';
+import SliderDe from './components/SliderDe.vue' ;
 export default {
 
   name: 'HomeView',
   components: {
-    SwiperComponent,
-  }
+    // SwiperComponent,
+    SliderDe,
+  },
 }
 </script>
 <style scoped>

@@ -1,74 +1,139 @@
 <template>
-    <swiper
-      :spaceBetween="30"
-      :centeredSlides="true"
-      :autoplay="{
-        delay: 2500,
-        disableOnInteraction: false,
-      }"
-      :pagination="{
-        clickable: true,
-      }"
-      :navigation="true"
-      :modules="modules"
-      class="mySwiper"
-    >
-      <swiper-slide>Slide 1</swiper-slide>
-      <swiper-slide>Slide 2</swiper-slide><swiper-slide>Slide 3</swiper-slide>
-      <swiper-slide>Slide 4</swiper-slide><swiper-slide>Slide 5</swiper-slide>
-      <swiper-slide>Slide 6</swiper-slide><swiper-slide>Slide 7</swiper-slide>
-      <swiper-slide>Slide 8</swiper-slide><swiper-slide>Slide 9</swiper-slide>
-    </swiper>
+    <carousel :per-page="1" :navigate-to="someLocalProperty" :mouse-drag="true" :loop="true" :autoplay="true" :autoplayTimeout="2500" :paginationPosition="top-overlay">
+    <slide>
+        <div class="arkaplan1">
+        <div class="p-5 h-screen flex flex-col justify-between w-[480px]">
+          <div>
+            <img
+              src="@/assets/SIRIUS_TEDARİK_Logo_Full Beyaz-01 1.png"
+              alt=""
+            />
+          </div>
+          <div class="text-left float-end space-y-2">
+            <div class="pb-6 space-y-8 flex flex-col">
+              <h4 class="font-black text-3xl text-white">
+                Zamanı En İyi Şekilde Kullan
+              </h4>
+              <span class="text-base text-white"
+                >Zamanınızı ve kaynaklarınızı etkin bir şekilde yönetin.
+                Yolculuklarınızı tasarruflu bir şekilde planlayarak, hızlı ve
+                zamanında teslimatlar ile iş süreçlerinizi optimize edin.</span
+              >
+            </div>
+            <div class="space-x-2 pb-14">
+              <span class="bg-white px-10 rounded-xl"></span>
+              <span class="bg-white opacity-50 px-10 rounded-xl"></span>
+              <span class="bg-white opacity-50 px-10 rounded-xl"></span>
+            </div>
+            <div class="flex space-x-8 items-center py-4">
+              <span><img src="@/assets/simple-icons_x.png" alt="" /></span>
+              <span><img src="@/assets/ri_instagram-fill.png" alt="" /></span>
+              <span><img src="@/assets/mdi_linkedin.png" alt="" /></span>
+            </div>
+            <div>
+              <span class="text-white"
+                >Lorem ipsum dolor sit amet consectetur.</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </slide>
+    <slide>
+        <div class="arkaplan2">
+        <div class="p-5 h-screen flex flex-col justify-between w-[480px]">
+          <div>
+            <img
+              src="@/assets/SIRIUS_TEDARİK_Logo_Full Beyaz-01 1.png"
+              alt=""
+            />
+          </div>
+          <div class="text-left float-end space-y-2">
+            <div class="pb-6 space-y-8 flex flex-col">
+              <h4 class="font-black text-3xl text-white">
+                Yakıt Tüketimi Tasarrufunda Öncü
+              </h4>
+              <span class="text-base text-white"
+                >Yenilikçi teknolojimiz sayesinde, yakıt tüketimini optimize
+                ederek çevre dostu ve ekonomik bir lojistik deneyimi sunuyoruz.
+                İleri seviye verimlilikle, tasarrufun keyfini çıkarın.</span
+              >
+            </div>
+            <div class="space-x-2 pb-14">
+              <span class="bg-white px-10 opacity-50 rounded-xl"></span>
+              <span class="bg-white px-10 rounded-xl"></span>
+              <span class="bg-white opacity-50 px-10 rounded-xl"></span>
+            </div>
+            <div class="flex space-x-8 items-center py-4">
+              <span><img src="@/assets/simple-icons_x.png" alt="" /></span>
+              <span><img src="@/assets/ri_instagram-fill.png" alt="" /></span>
+              <span><img src="@/assets/mdi_linkedin.png" alt="" /></span>
+            </div>
+            <div>
+              <span class="text-white"
+                >Lorem ipsum dolor sit amet consectetur.</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </slide>
+    <slide>
+        <div class="arkaplan3">
+        <div class="p-5 h-screen flex flex-col justify-between w-[480px]">
+          <div>
+            <img
+              src="@/assets/SIRIUS_TEDARİK_Logo_Full Beyaz-01 1.png"
+              alt=""
+            />
+          </div>
+          <div class="text-left float-end space-y-2">
+            <div class="pb-6 space-y-8 flex flex-col">
+              <h4 class="font-black text-3xl text-white">
+                Araç Takibiyle Kontrol Senin Elinde
+              </h4>
+              <span class="text-base text-white"
+                >Araçlarınızın gerçek zamanlı takibiyle güvenliği artırın,
+                teslimat süreçlerini hızlandırın ve operasyonel verimliliği en
+                üst düzeye çıkarın. Kontrol sizin elinizde.</span
+              >
+            </div>
+            <div class="space-x-2 pb-14">
+              <span class="bg-white px-10 opacity-50 rounded-xl"></span>
+              <span class="bg-white opacity-50 px-10 rounded-xl"></span>
+              <span class="bg-white px-10 rounded-xl"></span>
+            </div>
+            <div class="flex space-x-8 items-center py-4">
+              <span><img src="@/assets/simple-icons_x.png" alt="" /></span>
+              <span><img src="@/assets/ri_instagram-fill.png" alt="" /></span>
+              <span><img src="@/assets/mdi_linkedin.png" alt="" /></span>
+            </div>
+            <div>
+              <span class="text-white"
+                >Lorem ipsum dolor sit amet consectetur.</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </slide>
+  </carousel>
   </template>
+  
   <script>
-    // Import Swiper Vue.js components
-    import { Swiper, SwiperSlide } from 'swiper/vue';
-  
-    // Import Swiper styles
-    import 'swiper/css';
-  
-    import 'swiper/css/pagination';
-    import 'swiper/css/navigation';
-  
-    import './style.css';
-  
-    // import required modules
-    import { Autoplay, Pagination, Navigation } from 'swiper/modules';
-  
-    export default {
-      components: {
-        Swiper,
-        SwiperSlide,
-      },
-      setup() {
-        return {
-          modules: [Autoplay, Pagination, Navigation],
-        };
-      },
-    };
+  export default {
+    
+  };
   </script>
+  
   <style>
-.swiper {
-  width: 100%;
-  height: 100%;
+  .arkaplan1 {
+  background-image: url("@/assets/carousel1.png");
 }
-
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-
-  /* Center slide text vertically */
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.arkaplan2 {
+  background-image: url("@/assets/Rectangle 2.png");
 }
-
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.arkaplan3 {
+  background-image: url("@/assets/Rectangle 10.png");
 }
-
-</style>
+  </style>
