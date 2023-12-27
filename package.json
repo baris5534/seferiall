@@ -17,7 +17,9 @@
     "vue": "^2.6.14",
     "vue-carousel": "^0.18.0",
     "vue-router": "^3.5.1",
+    "vue-server-renderer": "^2.7.16",
     "vue-slider-component": "^3.2.24",
+    "vue-ssr-carousel": "^2.3.3",
     "vuex": "^3.6.2"
   },
   "devDependencies": {
